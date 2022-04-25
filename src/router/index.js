@@ -18,7 +18,7 @@ const routes = [
     component: AboutView
   },
   {
-    path: '/cadastro',
+    path: '/cadastro/:id',
     name: 'Cadastro',
     component: Cadastro
   }
