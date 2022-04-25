@@ -4,13 +4,14 @@
         <input type="text" name="name" id="name" placeholder="Name"><br>
         <button>Cadastrar</button>
         <h2>{{parametro}}</h2>
+        <router-view/>
     </div>
 </template>
 <script>
 
 export default{
     created(){
-        this.parametro = this.$route.params.id;
+        // this.parametro = this.$route.params.id;
     },
     data(){
         return{

@@ -18,9 +18,16 @@ const routes = [
     component: AboutView
   },
   {
-    path: '/cadastro/:id',
+    path: '/cadastro/',
     name: 'Cadastro',
-    component: Cadastro
+    component: Cadastro,
+    children:[
+      {
+        path:'filha',
+        name: 'filha',
+        component: AboutView
+      }
+    ]
   }
 ]
 
